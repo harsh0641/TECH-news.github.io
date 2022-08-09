@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap demo</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+            aria-hidden="true"></i></button>
+    <div class="line" id="scrollIndicator"></div>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="logo">TECH-news</div>
+                </div>
+                <div class="col-md-8">
+
+                    <ul id="menu" class="float-md-end">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#Rnews">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+            
+             
+                <div class="humburger">
+                    <div class="container">
+                        <div class="pt-2 pb-2">
+                            <a class="icon pl-2 pr-2 p-1  
+                    float-end" href="#hamburger-icon" onclick="gfgMenu()">
+
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="links nav flex-column d-none">
+                            <a class="nav-link border-bottom" href="#"> Home
+
+                            </a>
+
+                            <a class="nav-link border-bottom" href="#about"> About
+
+                            </a>
+
+                            <a class="nav-link border-bottom" href="#testimonials">Testimonials </a>
+
+                            <a class="nav-link border-bottom" href="#Rnews"> News
+
+                            </a>
+
+                            <a class="nav-link border-bottom" href="#contact"> Contact
+
+                            </a>
+                            <br>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8">
+                    <div class="banner-title">
+                        <h1 class="title">
+                            We're changing the world
+                            with Technology
+                        </h1>
+                        <p class="lead">“Our future success is directly proportinal to our ability
+                            to understand and integrate new technology into our work"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section" id="about">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-head">About Technology</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-brain"> </i>
+                    <h3>
+                        Innovation
+
+                    </h3>
+                    <p>A new or improved product or process whose technological characteristics are significantly
+                        different from before</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-solid fa-arrow-up-right-dots"></i>
+                    <h3>
+                        Updating
+                    </h3>
+                    <p>Replace outdated software and hardware. Old and outdated technology is likely to be slow and
+                        waste valuable time and money</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-solid fa-handshake"></i>
+                    <h3>
+                        Execution
+                    </h3>
+                    <p>Increase a business's profit, productivity, security, work culture, internal communication among
+                        team members, and external communication between an organization and its clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head text-white">
+                        Testimonials
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>"The first rule of any technology used in a business is that automation applied to an
+                            efficient operation will magnify the efficiency. The second is that automation applied
+                            to an inefficient operation will magnify the inefficiency. Success is a lousy teacher.
+                            It seduces smart people into thinking they can't lose"</p>
+                        <p>-- Bill Gates </p>
+                        <img src="./bill.jfif" class="image" alt="">
+                        <div class="author">
+                            <span> Bill Gates</span>
+                        </div>
+                        <div class="author-company">
+                            Microsoft
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>“Technology is nothing. What's important is that you have faith in people, that they're
+                            basically good and smart — and if you give them tools, they'll do wonderful things with
+                            them”</p>
+                        <p class="text">-- Steve Jobs </p>
+                        <img src="./stevejobs.jfif" class="image" alt="">
+                        <div class="author">
+                            <span> Steve Jobs </span>
+                        </div>
+                        <div class="author-company">
+                            Apple
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="Rnews">
+        <div id="news" class="container section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-head">
+                        Tech News
+                    </h2>
+                </div>
+                <div class="col-xl-3 ">
+                    <div class="news-post">
+                        <img src="./arlington-research-nFLmPAf9dVc-unsplash.jpg" class="image1" alt="">
+                        <h3><a href="https://www.hpe.com/in/en/what-is/artificial-intelligence.html?jumpid=ps_czxkg6qts3_aid-520061736&ef_id={gclid}:G:s&s_kwcid=AL!13472!3!595029415192!p!!g!!what%27s%20ai!17064341488!133355606382&"
+                                class="news-link">&nbsp;
+                                Artifical Intelligence
+                            </a></h3>
+                        <div class="post-date">April 30 ,2022</div>
+                        <p class="para">
+                            Artificial intelligence (AI) broadly refers to any human-like behaviour displayed by a
+                            machine or system. In AI's most basic form, computers are programmed to “mimic” human
+                            behaviour using extensive data from past examples of similar behaviour...</p>
+                        <a href="https://www.hpe.com/in/en/what-is/artificial-intelligence.html?jumpid=ps_czxkg6qts3_aid-520061736&ef_id={gclid}:G:s&s_kwcid=AL!13472!3!595029415192!p!!g!!what%27s%20ai!17064341488!133355606382&"
+                            class="readmore">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="news-post">
+                        <img src="./redd-5U_28ojjgms-unsplash.jpg" class="image1" alt="">
+                        <h3><a href="https://academy.binance.com/en/glossary/blockchain?utm_campaign=googleadsxacademy&utm_source=googleadwords_int&utm_medium=cpc&ref=HDYAHEES"
+                                class="news-link">&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;Blockchain</a></h3>
+                        <div class="post-date">May 23 ,2022</div>
+                        <p class="para">The first prototype of a blockchain is dated back to the early 1990s when
+                            computer scientist Stuart Haber and physicist W. Scott Stornetta applied cryptographic
+                            techniques in a chain of blocks as a way to secure digital documents from data tampering...
+                        </p>
+                        <a href="https://academy.binance.com/en/glossary/blockchain?utm_campaign=googleadsxacademy&utm_source=googleadwords_int&utm_medium=cpc&ref=HDYAHEES"
+                            class="readmore">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 ">
+                    <div class="news-post">
+                        <img src="./israel-andrade-YI_9SivVt_s-unsplash.jpg" class="image1" alt="">
+                        <h3><a href="https://www.techtarget.com/searchenterpriseai/definition/machine-learning-ML"
+                                class="news-link">&nbsp;&nbsp; Machine learning</a></h3>
+                        <div class="post-date">June 3 ,2022</div>
+                        <p class="para">Machine learning (ML) is a type of artificial intelligence (AI) that allows
+                            software applications to become more accurate at predicting outcomes without being
+                            explicitly programmed to do so...</p>
+                        <a href="https://www.techtarget.com/searchenterpriseai/definition/machine-learning-ML"
+                            class="readmore">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-3 ">
+                    <div class="news-post">
+                        <img src="./sebastian-herrmann-Sr1xHcs6ic8-unsplash (1).jpg" class="image1" alt="">
+                        <h3><a href="https://www.datarobot.com/wiki/data-science/" class="news-link">&nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                &nbsp; Data Science</a>
+                        </h3>
+                        <div class="post-date">July 26 S2022</div>
+                        <p class="para">Data science is the field of study that combines domain expertise, programming
+                            skills, and knowledge of mathematics and statistics to extract meaningful insights from
+                            data...</p>
+                        <a href="https://www.datarobot.com/wiki/data-science/" class="readmore">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="footer-sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <div class="footer-widget">
+                            <h3>Our Mission</h3>
+                            <p>Our mission is to aware all to new innovations.In the real world how the tech is increase
+                                fastly and how people are update their self with that .we are provide you always new
+                                TECH news.Developing important new technology … for humankind, it's always been about
+                                balancing the positives and the negatives and harnessing it to make sure it benefits
+                                society</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="footer-widget">
+                            <h3>Latest News</h3>
+
+                            <ul>
+
+                                <li><a href="https://www.techbooky.business/meta-q2-2022-earnings/">
+                                        Meta Reports Disappointing Second Quarter Earnings Report</a>
+                                </li>
+                                <li><a href="https://www.techbooky.business/twitter-hike-price-of-blue-service/">Twitter
+                                        Raises The Price Of Its Blue Service To $4.99 From $2.99</a></li>
+                                <li><a href="https://www.techbooky.business/intel-q2-2022-earnings-results/">Intel’s
+                                        Poor Quarterly Earnings Suggest A Decline In The Demand For PCs</a></li>
+                                <li><a href="https://www.techbooky.business/apple-fiscal-q3-2022-earnings/">Apple
+                                        Reports Impressive Fiscal Third Quarter Earnings Results</a></li>
+                                <li><a href="https://www.techbooky.business/roku-q2-2022-results/">Roku Shares Plunge 25
+                                        Percent After Earnings Results Miss Estimates</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h3>Company Address</h3>
+                            <address>
+                                <b class="name">TECH-news</b>, Inc
+                                106 Park Rd Farnborough Hampshire ,United Kingdom <br>
+                                Email id: <a class="phone"
+                                    href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTFRMzWrbBMvblkpCHfMMbhZcGqMSDddLhqlxxWxGVvrHRMVVMFmMpbQTXfqdQDSgmgxfh">
+                                    service-reply@TECHnews.com
+                                </a>
+                                <br>
+                                Toll Free: <a class="phone" href="tel:1800-480-4800">1800-480-4800<br>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <b> Copyright @ 2022 TECH-news All rights reserved. </b>
+                </div>
+                <div class="col-md-6">
+                    <ul id="social-icons" class="float-md-end">
+                        <li><a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjU5MzczNjg4LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+                                class="fa-brands fa-facebook"></a></li>
+
+
+                        <li><a href="https://twitter.com/i/flow/login" class="fa-brands fa-twitter"></a></li>
+
+
+                        <li><a href="https://www.instagram.com/accounts/login/" class="fa-brands fa-instagram"></a></li>
+
+
+                        <li><a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                class="fa-brands fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+
+
+        window.addEventListener('scroll',
+            moveScrollIndicator);
+
+        const scrollIndicatorElt =
+            document.getElementById('scrollIndicator');
+
+        const maxHeight =
+            window.document.body.scrollHeight
+            - window.innerHeight;
+
+
+
+        function moveScrollIndicator(e) {
+            const percentage =
+                ((window.scrollY) / maxHeight) * 100;
+
+            scrollIndicatorElt.style.width
+                = percentage + '%';
+        }
+
+
+        function gfgMenu() {
+            const GFG = document.querySelector('.links');
+            if (GFG.classList.contains('d-none')) {
+                GFG.classList.remove('d-none');
+            }
+            else {
+                GFG.classList.add('d-none');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
